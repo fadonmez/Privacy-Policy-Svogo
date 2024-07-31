@@ -8,7 +8,17 @@
       body {
         font-family: Arial, sans-serif;
         line-height: 1.6;
-        margin: 20px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
       }
       h1,
       h2,
@@ -18,13 +28,22 @@
       p {
         margin-bottom: 10px;
       }
-      .container {
-        display: flex;
-        flex-direction: column;
-        width: 800px;
-        margin: auto;
-        align-items: start;
-        justify-content: start;
+      ul {
+        margin-bottom: 10px;
+        padding-left: 20px;
+      }
+      a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 600px) {
+        .container {
+          width: 100%;
+          padding: 10px;
+        }
       }
     </style>
   </head>
